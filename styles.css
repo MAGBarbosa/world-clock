@@ -1,8 +1,17 @@
+body {
+  background-color: rgb(9, 9, 9);
+}
 .container {
   max-width: 600px;
   margin: 0 auto;
+  margin-top: 20px;
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
+  background-image: url("resources/img1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: bottom;
+  color: white;
 }
 
 select {
@@ -15,14 +24,42 @@ select {
 .city {
   display: flex;
   justify-content: space-between;
+  padding: 0px 10px 0px 10px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+}
+.city:hover {
+  background-color: rgba(0, 0, 0, 0.6);
 }
 .time {
   font-weight: bold;
-  font-size: 36px;
+  font-size: 32px;
+  padding: 25px 10px 10px 10px;
 }
 .date {
   opacity: 0.7;
+  padding: 10px;
 }
 footer {
+  padding: 5px;
   text-align: center;
+  color: white;
+}
+
+h1 {
+  font-size: 38px;
+  padding: 10px;
+  text-align: center;
+  margin: 5px;
+}
+h2 {
+  font-size: 32px;
+}
+.links {
+  color: #9d7e71;
+}
+.links:visited {
+  color: #c38f65;
 }
