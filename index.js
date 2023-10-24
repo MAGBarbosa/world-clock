@@ -75,14 +75,14 @@ if (dayHalf === "AM") {
 
 //Update City based on the Select element
 
-let selectElement = document.querySelector("#single-city");
+let selectElement = document.querySelector(".single-city");
 
 function updateCity(event) {
   let cityTimezone = event.target.value;
   let cityTime = moment().tz(cityTimezone);
   let cityName = cityTimezone.replace("_", " ").split("/")[1];
   let citiesElement = document.querySelector("#cities");
-
+  background.style.backgroundPosition = "center center";
   citiesElement.innerHTML = `
   <div class="city" id="${cityName}">
           <div>
