@@ -73,12 +73,16 @@ if (dayHalf === "AM") {
   background.style.backgroundPosition = "bottom center";
 }
 
-//Update City based on the Select element
+//Update City based on the Select element AND include current location of user
 
 let selectElement = document.querySelector(".single-city");
 
 function updateCity(event) {
   let cityTimezone = event.target.value;
+
+  if (cityTimezone === "current") {
+    cityTimezone = moment.tz.guess();
+  }
   let cityTime = moment().tz(cityTimezone);
   let cityName = cityTimezone.replace("_", " ").split("/")[1];
   let citiesElement = document.querySelector("#cities");
