@@ -50,6 +50,14 @@ h1 {
   text-align: center;
   margin: 5px;
 }
+.h1 {
+  font-size: 38px;
+  padding: 10px;
+  text-align: center;
+  margin: 5px;
+  color: white;
+  text-decoration: none;
+}
 h2 {
   font-size: 32px;
 }
