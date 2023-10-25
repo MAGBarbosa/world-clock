@@ -67,3 +67,10 @@ h2 {
 .links:visited {
   color: #c38f65;
 }
+
+@media screen and (max-width: 800px) {
+  h2,
+  .time {
+    font-size: 28px;
+  }
+}
