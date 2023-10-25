@@ -73,4 +73,11 @@ h2 {
   .time {
     font-size: 24px;
   }
+
+  footer {
+    font-size: 12px;
+  }
+  select {
+    font-size: 16px;
+  }
 }
