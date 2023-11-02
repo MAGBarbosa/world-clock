@@ -80,7 +80,7 @@ let selectElement = document.querySelector(".single-city");
 function updateCity(event) {
   let cityTimezone = event.target.value;
 
-  if (cityTimezone === "current") {
+  if (cityTimezone === "current" || cityTimezone === "city") {
     cityTimezone = moment.tz.guess();
   }
   let cityTime = moment().tz(cityTimezone);
